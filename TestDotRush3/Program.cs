@@ -52,11 +52,17 @@ class Program
         return a + b + c;
     }
 
+    /// <inheritdoc cref="Add3(int, int, int)"/>
+    private static int Add4(int a, int b, int c){
+        return a + b + c;
+    }
+
     static void Main(string[] args)
     {
         Add(1, 2);
         Add2(1, 2);
         Add3(1, 2, 3);
+        Add4(1, 2, 3);
         Console.WriteLine("Hello, World!");
     }
 }
